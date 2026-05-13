@@ -28,12 +28,7 @@ const corsOrigins = process.env.CORS_ORIGINS
   : defaultOrigins;
 
 const app = express();
-app.use(
-  cors({
-    origin: corsOrigins,
-    credentials: false,
-  }),
-);
+app.use(cors());
 app.use(express.json());
 
 /** Stored tokenURI, or ipfs:// derived from legacy metadataGatewayUrl (Pinata gateway). */
