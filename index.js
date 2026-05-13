@@ -17,8 +17,7 @@ import {
 } from "./buyAuthMessage.js";
 
 const PORT = 5000;
-const MONGODB_URI =
-  "mongodb+srv://kbhimani1994_db_user:qFS6QneGNzKM5cJU@cluster0.itkm1h6.mongodb.net/?appName=Cluster0" || "mongodb://127.0.0.1:27017/nft";
+const MONGODB_URI = "mongodb+srv://kbhimani1994_db_user:qFS6QneGNzKM5cJU@cluster0.itkm1h6.mongodb.net/?appName=Cluster0"
 
 const defaultOrigins = [
   "http://localhost:5173",

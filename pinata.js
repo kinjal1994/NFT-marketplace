@@ -2,7 +2,7 @@ const PIN_FILE = "https://api.pinata.cloud/pinning/pinFileToIPFS";
 const PIN_JSON = "https://api.pinata.cloud/pinning/pinJSONToIPFS";
 
 export function assertPinataConfig() {
-  const jwt = "";
+  const jwt = process.env.PINATA_JWT?.trim();
   const key = "d05f4d0063bf15d1db83";
   const secret = "a9b5be594fdd32bdf5d94d0e31824df5dce86039689a015db20412b704ee97a2";
   if (!jwt && (!key || !secret)) {
