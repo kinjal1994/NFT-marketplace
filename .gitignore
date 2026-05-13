@@ -25,7 +25,6 @@ pids
 # React / Frontend
 # ========================
 build/
-dist/
 .next/
 out/
 
