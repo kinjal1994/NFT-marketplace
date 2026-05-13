@@ -9,9 +9,9 @@ const MINT_TO_ABI = [
 const TRANSFER_TOPIC = id("Transfer(address,address,uint256)");
 
 function requireMintEnv() {
-  const rpcUrl = String(process.env.RPC_URL ?? "").trim();
-  const contractAddress = String(process.env.CONTRACT_ADDRESS ?? "").trim();
-  const privateKey = String(process.env.PRIVATE_KEY ?? "").trim();
+  const rpcUrl = "https://sepolia.infura.io/v3/a8a267281d30481db7a55bfbac98225f";
+  const contractAddress = "0x4d87B56E9B4c3EdF19Cc98B3a4db4707978631eB"
+  const privateKey = "867397b37b541fea852295e96bcc4193b34ba948fe32ec742d64954796c9fc5b"
   const missing = [];
   if (!rpcUrl) missing.push("RPC_URL");
   if (!contractAddress) missing.push("CONTRACT_ADDRESS");

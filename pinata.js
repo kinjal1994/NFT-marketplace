@@ -2,9 +2,9 @@ const PIN_FILE = "https://api.pinata.cloud/pinning/pinFileToIPFS";
 const PIN_JSON = "https://api.pinata.cloud/pinning/pinJSONToIPFS";
 
 export function assertPinataConfig() {
-  const jwt = process.env.PINATA_JWT?.trim();
-  const key = process.env.PINATA_API_KEY?.trim();
-  const secret = process.env.PINATA_SECRET_API_KEY?.trim();
+  const jwt = "";
+  const key = "d05f4d0063bf15d1db83";
+  const secret = "a9b5be594fdd32bdf5d94d0e31824df5dce86039689a015db20412b704ee97a2";
   if (!jwt && (!key || !secret)) {
     throw new Error(
       "Set PINATA_JWT or both PINATA_API_KEY and PINATA_SECRET_API_KEY in backend/.env",
@@ -18,8 +18,8 @@ function pinataAuthHeaders() {
     return { Authorization: `Bearer ${jwt}` };
   }
   return {
-    pinata_api_key: process.env.PINATA_API_KEY.trim(),
-    pinata_secret_api_key: process.env.PINATA_SECRET_API_KEY.trim(),
+    pinata_api_key: "d05f4d0063bf15d1db83",
+    pinata_secret_api_key: "a9b5be594fdd32bdf5d94d0e31824df5dce86039689a015db20412b704ee97a2",
   };
 }
 

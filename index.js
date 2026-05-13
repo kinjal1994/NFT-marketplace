@@ -16,9 +16,9 @@ import {
   recoverBuyerFromBuySignature,
 } from "./buyAuthMessage.js";
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/nft";
+  "mongodb+srv://kbhimani1994_db_user:qFS6QneGNzKM5cJU@cluster0.itkm1h6.mongodb.net/?appName=Cluster0" || "mongodb://127.0.0.1:27017/nft";
 
 const defaultOrigins = [
   "http://localhost:5173",
